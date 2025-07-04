@@ -1,0 +1,60 @@
+
+body {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  background-color: #f2f2f2;
+  color: #333;
+  direction: rtl;
+  text-align: right;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0a4f2d;
+  margin-bottom: 20px;
+}
+
+input#searchBox {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+ul#results {
+  list-style: none;
+  padding: 0;
+}
+
+ul#results li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul#results li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a4f2d;
+  text-decoration: none;
+}
+
+ul#results li a:hover {
+  text-decoration: underline;
+}
+
+ul#results li p {
+  font-size: 16px;
+  margin-top: 5px;
+}
