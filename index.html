@@ -1,17 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>سرچ کریں - مدنی دنیا</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مدنی دنیا سرچ انجن</title>
+  <style>
+    body {
+      font-family: 'Noto Nastaliq Urdu', sans-serif;
+      background: #f9f9f9;
+      color: #111;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: green;
+    }
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .results {
+      margin-top: 30px;
+      text-align: right;
+      direction: rtl;
+    }
+    .post {
+      background: #fff;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    .post a {
+      font-size: 20px;
+      color: darkblue;
+      text-decoration: none;
+    }
+    .summary {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .label {
+      font-size: 14px;
+      color: green;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>مدنی دنیا سرچ انجن</h1>
-    <input type="text" id="searchBox" placeholder="تحریر تلاش کریں...">
-    <ul id="results"></ul>
-  </div>
+  <h1>مدنی دنیا سرچ انجن</h1>
+  <input type="text" id="searchBox" placeholder="تحریر تلاش کریں..." onkeyup="searchPosts()" />
+  <div class="results" id="results"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
